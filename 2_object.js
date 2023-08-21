@@ -5,7 +5,7 @@ tinderUser.Name = 'Jahir';
 tinderUser.Age = 23;
 tinderUser.isLoggedIn = false;
 
-// console.log(tinderUser);
+console.log(tinderUser);
 
 const regularUser = {
   email: 'some@gmail.com',
@@ -18,7 +18,7 @@ const regularUser = {
   }
 }
 
-// console.log(regularUser.fullName.name);
+console.log(regularUser.fullName.name);
 
 // onek gula object ak sathe add korar jonne ai mathode use kora hoi
 const obj1 = { a: 1, b: 2 };
@@ -26,15 +26,15 @@ const obj2 = { d: 4, c: 3 };
 const obj3 = { e: 5, f: 6 };
 
 const obj4 = { obj1, obj2, obj3 };// this is bad practices
-// console.log(obj4); 
+console.log(obj4);
 
 const obj5 = Object.assign(obj1, obj2, obj3); // jodi akane obj1 ke print kori tahole { a: 1, b: 2, d: 4, c: 3, e: 5, f: 6 } ati return kore jar karone akti sommasa hoi .ai somasa somadaner jonne {} use kora hoi
-// console.log(obj1);
+console.log(obj1);
 const obj6 = Object.assign({}, obj1, obj2, obj3);// akhane obj1 ar kono poriborton hobena 
-// console.log(obj5);
-// console.log(obj1);
+console.log(obj5);
+console.log(obj1);
 const obj7 = { ...obj1, ...obj2, ...obj3 }; //atta hochhe best practices. object add korar jonne.
-// console.log(obj6);
+console.log(obj6);
 
 // vary vary importent topic
 
@@ -69,3 +69,17 @@ console.log(Object.values(tinderUser)); // return valus [ '123abc', 'Jahir', 23,
 
 //jodi object ar every propatys ke akti kore array te rupantor korte chai tahole entries() methods use kor hoi
 console.log(Object.entries(tinderUser));
+
+
+
+// javascript destructuring methods 
+const company = {
+  companyName: 'JaHiR',
+  companyOthore: 'Md Jahirul islam',
+  companyValus: '100000000'
+}
+
+console.log(company.companyName);
+// akhane object ar destructuring kora hoice 
+const { companyOthore } = company;
+console.log(companyOthore);
