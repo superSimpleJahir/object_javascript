@@ -1,7 +1,7 @@
 // singleton 
 // Object.create
 
-// object literals
+// object literals or non-singleton
 let mySym = Symbol('Hello');
 
 let user = {
